@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #0b1f3a;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+.logo-box {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.logo-box span {
+    width: 10px;
+    height: 10px;
+}
+
+.logo-box span:nth-child(1) {
+    background-color: #f25022;
+}
+
+.logo-box span:nth-child(2) {
+    background-color: #7fba00;
+}
+
+.logo-box span:nth-child(3) {
+    background-color: #00a4ef;
+}
+
+.logo-box span:nth-child(4) {
+    background-color: #ffb900;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.right-menu {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.right-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: #f4eadb;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-content {
+    width: 40%;
+    padding: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+    background-color: #0879d1;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #005da6;
+}
+
+
+/* Products */
+
+.products {
+    padding: 60px 70px;
+    background-color: white;
+}
+
+.products > h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 25%;
+    min-height: 430px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 25px 15px 15px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 15px 30px;
+}
+
+.card .button {
+    margin-left: 15px;
+}
+
+
+/* Bing */
+
+.bing {
+    margin: 50px 70px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.bing-content {
+    width: 50%;
+    padding: 30px;
+}
+
+.bing-content h2 {
+    font-size: 40px;
+}
+
+.bing-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.bing-image {
+    width: 50%;
+}
+
+.bing-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Business */
+
+.business {
+    padding: 60px 70px;
+    background-color: #dff3fc;
+}
+
+.business > h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+/* Follow */
+
+.follow {
+    text-align: center;
+    padding: 60px;
+    background-color: white;
+}
+
+.follow h3 {
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #0879d1;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    background-color: #f2f2f2;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
