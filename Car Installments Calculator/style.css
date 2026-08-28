@@ -1,0 +1,10 @@
+nav{
+    background-color: #020B1A;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight{
+    color: #F9A826;
+}
