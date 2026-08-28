@@ -1,3 +1,19 @@
+:root {
+    --bg-color: #020B1A;
+    --secondary-bg: #07182D;
+    --card-color: #0B1D33;
+    --input-color: #0D223B;
+
+    --primary-color: #FFC400;
+    --primary-hover: #FFD333;
+    --success-color: #7ED321;
+
+    --white: #FFFFFF;
+    --text-secondary: #B8C2D0;
+    --text-muted: #7F8A9A;
+
+    --border-color: #20334A;
+}
 nav{
     background-color: #020B1A;
     color: #fff;
@@ -7,4 +23,11 @@ nav{
 }
 .highlight{
     color: #F9A826;
+}
+nav button{
+    border : 1px solid #F9A826;
+    padding: 20px;
+    height: 15px;
+    background-color: #020B1A;
+    color: white;
 }
