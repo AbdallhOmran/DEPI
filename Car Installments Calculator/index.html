@@ -1,35 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Carculate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carculate - Calculate Your Ride</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body>
-  <header>
-        <nav>
-            <div>
-                <div>
-                 <h1>Car<span class="highlight">culate</span></h1>
-                  <p>Calculate your ride.</p>
-                </div>
-            </div>
-               <button>Contact Us</button>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span>Car</span>culate
+        </div>
+
+        <nav class="navbar">
+            <a href="#" class="active">Calculator</a>
+            <a href="#">How It Works</a>
+            <a href="#">About</a>
         </nav>
-  </header>   
+
+        <a href="#" class="contact-btn">Contact Us</a>
+
+    </header>
 
 
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    YOUR CAR. YOUR PLAN. YOUR NUMBERS.
+                </p>
+
+                <h1>
+                    Dream car?
+                    <br>
+                    <span>Calculate it first.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Get a quick estimate of your monthly car payment
+                    before you hit the road.
+                </p>
+
+            </div>
 
 
+            <!-- ================= CALCULATOR ================= -->
+
+            <div class="calculator-card">
+
+                <!-- LEFT SIDE -->
+
+                <div class="calculator-form">
+
+                    <div class="section-heading">
+                        <span class="section-number">01</span>
+
+                        <div>
+                            <h2>Tell us about your car</h2>
+                            <p>Enter your car and payment details.</p>
+                        </div>
+                    </div>
 
 
+                    <!-- Car Type -->
+
+                    <div class="form-group">
+
+                        <label for="carType">
+                            Car Type
+                        </label>
+
+                        <select id="carType">
+
+                            <option value="sedan">
+                                Sedan
+                            </option>
+
+                            <option value="suv">
+                                SUV
+                            </option>
+
+                            <option value="coupe">
+                                Coupe
+                            </option>
+
+                            <option value="hatchback">
+                                Hatchback
+                            </option>
+
+                            <option value="pickup">
+                                Pickup
+                            </option>
+
+                        </select>
+
+                    </div>
 
 
+                    <!-- Car Model -->
+
+                    <div class="form-group">
+
+                        <label for="carModel">
+                            Car Model
+                        </label>
+
+                        <select id="carModel">
+
+                            <option>
+                                BMW 3 Series
+                            </option>
+
+                            <option>
+                                BMW 5 Series
+                            </option>
+
+                            <option>
+                                BMW X3
+                            </option>
+
+                            <option>
+                                BMW X5
+                            </option>
+
+                            <option>
+                                Mercedes C-Class
+                            </option>
+
+                            <option>
+                                Toyota Camry
+                            </option>
+
+                        </select>
+
+                    </div>
 
 
+                    <div class="form-row">
+
+                        <!-- Car Price -->
+
+                        <div class="form-group">
+
+                            <label for="carPrice">
+                                Car Price
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="number"
+                                    id="carPrice"
+                                    value="1000000"
+                                >
+
+                                <span>EGP</span>
+
+                            </div>
+
+                        </div>
 
 
+                        <!-- Down Payment -->
 
-    <script src="index.js"></script>
+                        <div class="form-group">
+
+                            <label for="downPayment">
+                                Down Payment
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="number"
+                                    id="downPayment"
+                                    value="200000"
+                                >
+
+                                <span>EGP</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Installment Period -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Installment Period
+                        </label>
+
+                        <div class="period-options">
+
+                            <button class="period active">
+                                <strong>1</strong>
+                                <span>Year</span>
+                            </button>
+
+                            <button class="period">
+                                <strong>2</strong>
+                                <span>Years</span>
+                            </button>
+
+                            <button class="period">
+                                <strong>3</strong>
+                                <span>Years</span>
+                            </button>
+
+                            <button class="period">
+                                <strong>4</strong>
+                                <span>Years</span>
+                            </button>
+
+                            <button class="period">
+                                <strong>5</strong>
+                                <span>Years</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Calculate Button -->
+
+                    <button class="calculate-btn">
+                        Calculate Payment
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+
+                <div class="calculator-result">
+
+                    <div class="result-heading">
+
+                        <span class="section-number">02</span>
+
+                        <div>
+                            <h2>Your Estimate</h2>
+                            <p>Here's what your payment could look like.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Main Result -->
+
+                    <div class="main-result">
+
+                        <span>
+                            MONTHLY PAYMENT
+                        </span>
+
+                        <h3>
+                            EGP 22,000
+                        </h3>
+
+                        <p>
+                            per month
+                        </p>
+
+                    </div>
+
+
+                    <!-- Result Details -->
+
+                    <div class="result-details">
+
+                        <div class="result-item">
+
+                            <span>
+                                Interest Rate
+                            </span>
+
+                            <strong>
+                                13%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Financed Amount
+                            </span>
+
+                            <strong>
+                                EGP 800,000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Total Interest
+                            </span>
+
+                            <strong>
+                                EGP 520,000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-item">
+
+                            <span>
+                                Total Amount
+                            </span>
+
+                            <strong>
+                                EGP 1,320,000
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Result Note -->
+
+                    <div class="result-note">
+
+                        <span class="note-icon">✓</span>
+
+                        <p>
+                            This is an estimated payment.
+                            Actual rates may vary.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <span>Car</span>culate
+        </div>
+
+        <p>
+            Calculate your ride. Drive with confidence.
+        </p>
+
+        <p class="copyright">
+            © 2026 Carculate. All rights reserved.
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
